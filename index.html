@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" href="iconos/style.css">
+	<link rel="stylesheet" href="iconos/flechas/style.css">
+	<script src="das.js" defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=initMap"></script>
+	<title >Document</title>
+</head>
+<body>
+	<header>
+		<div class="content-logo-menu">
+			<a href="" class="link-logo"><img src="videos/pikas.jfif"></a>
+			
+			<label class="label">
+					<span class="label-span"></span>
+			</label>
+		</div>
+		<nav class="nav">
+			<ul class="ul">
+				<li>
+					<a href="#">Inicio</a>
+				</li>
+				<li>
+					<a href="#">Menu</a>
+				</li>
+				<li>
+					<a href="#">Reservacion</a>
+				</li>
+				<li>
+					<a href="#">Contacto</a>
+				</li>
+			</ul>
+			
+		</nav>
+
+		
+		
+	</header>
+	<main>
+		<div class="container-presentacion">
+			<div class="presentacion">
+				<span class="span">Bienvenidos a Pikas</span>
+				<div>
+					<a href="#">Menu</a>
+				</div>
+				
+				<!-- <h1 class="h1">Restaurante Pikas </h1>
+				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2> -->
+			</div>
+			<video src="videos/146623167_1365760417092968_5238445333154506187_n.mp4" muted loop autoplay></video>
+		</div>
+		<section class="main-descripcion">
+			<div class="main-container-img">
+				<img src="videos/pika pizza.jpg" alt="">
+			</div>
+			<div class="main-container-descripcion">
+				<h2>The Restaurant</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ut enim quam laboriosam illum amet.Obcaecati nisi ipsum possimus necessitatibus tempore, illo id facere magni quisquam quam quaerat accusamus dolores?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ut enim quam laboriosam illum amet.Obcaecati ?</p>
+			</div>
+		</section>
+		<section class="galeria">
+			<div class="galeria-descripcion">
+				<h2>Best & Good</h2>
+				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+			</div>
+			<div class="galeria-flex">
+				<figure class="galeria-figure">
+				<img src="img/248745843_294077472717670_5734892698168211910_n.jpg" alt="">
+			</figure>
+			 <figure class="galeria-figure">
+				<img src="img/269831698_2761533327474399_5671308368957855954_n.jpg" alt="">
+			</figure>
+			<figure class="galeria-figure">
+				<img src="img/271385187_1012637839597119_5981926996545668114_n.webp" alt="">
+			</figure>
+			<figure class="galeria-figure">
+				<img src="img/279102087_373753444675575_7525921688967263155_n.jpg" alt="">
+			</figure>
+			<figure class="galeria-figure">
+				<img src="img/288464004_334985022125582_1111564261771060036_n.jpg" alt="">
+			</figure>
+			<figure class="galeria-figure">
+				<img src="img/71176431_191940421817346_1906788772176803769_n.jpg" alt="">
+			</figure> 
+			</div>
+		</section>
+		<section class="silder">
+			<h2>Testimonial</h2>
+		  <div class="slider-flex" id="slider">
+			<div class="container-slider">
+				<p>“ primerp Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. ”</p>
+				<div>
+					<img src="img/usuario2.png" alt="">
+					<div>
+						<h4>Mike Richardson</h4>
+						<p>CEO, XYZ Company</p>
+					</div>
+				</div>
+		 	</div>
+		 	<div class="container-slider">
+				
+				<p>“segundo Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. ”</p>
+				<div>
+					<img src="img/usuario2.png" alt="">
+					<div>
+						<h4>Mike Richardson</h4>
+						<p>CEO, XYZ Company</p>
+					</div>
+					
+				</div>
+		 	</div>
+		 	<div class="container-slider">
+				
+				<p>“tercero Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. ”</p>
+				<div>
+					<img src="img/usuario2.png" alt="">
+					<div>
+						<h4>Mike Richardson</h4>
+						<p>CEO, XYZ Company</p>
+					</div>
+					
+				</div> 
+		 	</div>
+		 	
+		 </div>	
+
+		 	<div class="slider-btn slider-btn-right" id="btn-right">
+		 		<span class="icon-circle-left"></span>
+		 	</div>
+		 	<div class="slider-btn slider-btn-left" id="btn-left">	
+		 		<span class="icon-circle-right"></span>
+		 		
+		 	</div> 
+		</section>	
+		<div class="google-map" id="google-map">
+			
+		</div>
+	</main>
+		<footer class="footer">
+			<div class="footer-flex">
+				<div class="horario">
+					<ul>
+						<h2>Horario</h2>
+						<li>
+							<span>Lunes a sabado</span>
+							<span>2:00 pm - 11:00pm</span>
+						</li>
+						<li>
+							<span>Domingo</span>
+							<span>4:00 pm - 10:00pm</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer-logo">
+					<img src="videos/pikas.jfif" alt="">
+					<div class="footer-logo-redes">
+						<a href=""><span class="icon-facebook2"></span></a>
+						<a href=""><span class="icon-instagram"></span></a>
+					</div>
+					
+				</div>
+				<div class="contacto">
+					<ul class="contacto-ul">
+						<h2>Contacto</h2>
+						<li>
+							<span>Ubicacion</span>
+							<span>El paraiso Caracas</span>
+						</li>
+						<li>
+							<span>Telefono</span>
+							<span>+1 242 4942 290</span>
+						</li>
+						<li>
+							<span>Email</span>
+							<span>info@yourdomain.com</span>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+			<p class="copyright">
+				©2022 BY PIKAS RESTOBAR - TODOS LOS DERECHOS RESERVADOS
+			</p>
+
+		</footer>		
+	</main>
+
+	</body>
+</html>

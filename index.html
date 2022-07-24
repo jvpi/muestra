@@ -7,7 +7,10 @@
 	<link rel="stylesheet" href="iconos/style.css">
 	<link rel="stylesheet" href="iconos/flechas/style.css">
 	<script src="das.js" defer></script>
+	<script type="text/javascript" src="menuLateral.js" defer></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=initMap"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 	<title >Document</title>
 </head>
 <body>
@@ -15,11 +18,14 @@
 		<div class="content-logo-menu">
 			<a href="" class="link-logo"><img src="videos/pikas.jfif"></a>
 			
-			<label class="label">
-					<span class="label-span"></span>
+			<label class="label" id="label">
+					<!-- <span class="label-span"></span> -->
+					<span  id="bar-menu1"></span>
+					<span  id="bar-menu2"></span>
+					<span  id="bar-menu3"></span>
 			</label>
 		</div>
-		<nav class="nav">
+		<nav class="nav" id="nav">
 			<ul class="ul">
 				<li>
 					<a href="#">Inicio</a>
@@ -28,7 +34,7 @@
 					<a href="#">Menu</a>
 				</li>
 				<li>
-					<a href="#">Reservacion</a>
+					<a href="#">Reservación</a>
 				</li>
 				<li>
 					<a href="#">Contacto</a>

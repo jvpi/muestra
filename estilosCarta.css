@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Roboto Condensed', sans-serif;
+	/*font-family: 'Edu NSW ACT Foundation', cursive;*/
+}
+
+body{
+	height: 100%;
+}
+
+header{
+	width: 100%;
+	min-height: 40px;
+
+	background-color: #FF8D29;
+	position: fixed;
+	top: 0;
+	z-index: 30;
+	
+	
+}
+.content-logo-menu{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.link-logo img{
+	object-fit: cover;
+	border-radius: 50%;
+	
+}
+img{
+	width: 80px;
+
+}
+.nav{
+
+	width: 25%;
+	margin-left: -100%;
+	height:100vh ;
+	position: absolute;
+	top: 0;
+	z-index: 20;
+	background-color: #FF8D29;
+	transition: margin .8s
+}
+.activeMenu{
+	margin-left: 0%;
+}
+.ul{
+	
+	height: inherit;
+	width: 100%;
+	text-align: center;
+	padding-top: 150px
+
+}
+li{
+	list-style: none;
+	
+	margin-top: 30px;
+	display: block;
+	width: 100%;
+}
+li a{
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	width: 100%;
+	font-size: 1.7em;
+}
+.label{
+	position: absolute;
+	right: 20px;
+	padding: 7px 0;
+	width: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	cursor: pointer;
+	z-index: 10;
+	
+
+}
+/*.bar-menu1, .bar-menu2, .bar-menu3*/
+.label span {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+	margin-top: 7px;
+	transform-origin: 0 100%;
+	transition: all  .5s
+}
+.activebar-menu1{
+	transform: rotate(45deg) translate(-2px, 1px);
+}
+.activebar-menu2{
+	opacity: 0;
+	margin-left: -30px;
+}
+.activebar-menu3{
+	transform: rotate(-45deg) translate(-3px, 1px);
+}
+.label-span{
+	background-color: #000;
+	position: absolute;
+	top:50%;
+	height: 2px;
+	width: 100%;
+	display: block;
+	
+}
+
+
+/*main*/
+
+.main{
+	width: 100%;
+	
+	padding-top: 40px;
+	margin-top: 40px;
+}
+
+
+.menu{
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #F1F1F1;
+	padding-bottom: 100px
+}
+
+.menu-producto{
+	width: 30%;
+	border: 1px solid #E9E9E9;
+	margin-right: 10px;
+	height: 350px;
+	transition: all .3s;
+	margin-bottom: 10px;
+	background-color: #fff;
+}
+.menu-producto:hover{
+	transform: scale(1.008);
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+.menu-container-img{
+	width: 100%;
+	height: 60%;
+}
+
+.menu-container-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center bottom;
+	
+}
+
+.menu-container-descripcion-plato{
+	border: 1px solid #E9E9E9;
+	padding: 8px;
+}
+.menu-container-descripcion-plato h2{
+	color: rgb(51, 63, 72);
+	font-weight: 100
+}
+.menu-container-precio{
+	height:100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.precio{
+	color: rgb(51, 63, 72);
+	font-weight: 100
+}
+.agregar {
+	display: inline-block;
+	background-color: #FF8D29;
+	padding: 7px 40px;
+	cursor: pointer;
+	
+	transition: background ease .2s;
+}
+
+.agregar:hover{
+	background-color: #FF8316;
+}
+
+
+.carrito{
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+	background-color: rgba(36,36,36, 0.8);
+	text-align: center;
+	color: #fff;
+	position: fixed;
+	bottom: 0;
+}
+
+
+
+.ver-carrito{
+	display: inline-block;
+	background-color: #FF8D29;
+	padding: 5px 20px;
+	cursor: pointer;
+	transition: background ease .3s;
+	margin-left: 10px;
+}
+
+.ver-carrito:hover{
+	background-color: #FF8316;
+}
+
+.carrito-icono{
+	margin-right: 10px;
+
+}
+
+.agregar-remover__producto{
+	display: flex;
+	margin-bottom: 10px;
+	padding: 7px 40px;
+	display: none;
+}
+.agregar-remover__producto div{
+	border: 1px solid #E9E9E9 
+	
+}
+
+
+.btn-mas{
+	width: 100%;
+
+	display: inline-block;
+	padding: 7px 28px;
+	color: #fff;
+	font-weight: 100;
+	background-color: #FF8D29;
+	cursor: pointer;
+}
+
+.cantidad{
+	display: inline-block;
+	font-weight: 100;
+	width: 100%;
+	padding: 7px 38px;
+}
+
+.btn-menos{
+	cursor: pointer;
+	display: inline-block;
+	padding: 7px 23px;
+	color: #fff;
+	font-weight: 100;
+	width: 100%;
+	color: rgb(51, 63, 72);
+}

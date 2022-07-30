@@ -9,6 +9,9 @@ app.get('/', (req, res) => {
 app.get('/carta', (req, res) => {
   res.sendFile(path.join(__dirname,'indexCarta.html'))
 })
+app.get('/reservacion', (req, res) => {
+  res.sendFile(path.join(__dirname,'calendario.html'))
+})
  app.use(express.static(path.join(__dirname)))
 
 app.listen(port, () => {

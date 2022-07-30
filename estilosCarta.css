@@ -4,11 +4,12 @@
 	padding:0;
 	box-sizing: border-box;
 	font-family: 'Roboto Condensed', sans-serif;
-	/*font-family: 'Edu NSW ACT Foundation', cursive;*/
+	font-family: 'Edu NSW ACT Foundation', cursive;
 }
 
 body{
-	height: 100%;
+	max-width: 100%;
+	
 }
 
 header{
@@ -85,7 +86,7 @@ li a{
 	
 
 }
-/*.bar-menu1, .bar-menu2, .bar-menu3*/
+
 .label span {
 	display: block;
 	width: 100%;
@@ -116,10 +117,10 @@ li a{
 }
 
 
-/*main*/
+
 
 .main{
-	width: 100%;
+	max-width: 100%;
 	
 	padding-top: 40px;
 	margin-top: 40px;
@@ -230,10 +231,10 @@ li a{
 }
 
 .agregar-remover__producto{
-	display: flex;
+	display: none;
 	margin-bottom: 10px;
 	padding: 7px 40px;
-	display: none;
+	
 }
 .agregar-remover__producto div{
 	border: 1px solid #E9E9E9 
@@ -267,4 +268,29 @@ li a{
 	font-weight: 100;
 	width: 100%;
 	color: rgb(51, 63, 72);
+}
+
+
+
+#literal{
+	width: 100px;
+	height: 100px;
+	
+}
+
+@media screen and (max-width: 420px){
+	body{
+		
+
+	}
+
+	.menu-producto{
+		width: 90%;
+	}
+	.nav{
+		margin-top: 50px;
+		width: 100%;
+		height:calc(100vh - 50px)  ;
+		
+	}
 }

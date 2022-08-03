@@ -27,13 +27,11 @@ function slider() {
 	function next() {
 		let sliderScetionFirist = document.querySelectorAll('.container-slider')[0]
 		let slider = document.getElementById('slider')
-		// slider.style.marginLeft = '-240%'
 		slider.style.marginLeft = '-200%'
 		slider.style.transition = '.5s';
 		setTimeout(function() {
 			slider.style.transition = 'none' ;
 			slider.insertAdjacentElement('beforeend',sliderScetionFirist)
-			// slider.style.marginLeft = '-120%'
 			slider.style.marginLeft = '-100%'
 		}, 500)
 	}
@@ -50,34 +48,46 @@ function slider() {
 
 			slider.style.transition = 'none' ;
 			slider.insertAdjacentElement('afterbegin',sliderSectionLast)
-			slider.style.marginLeft = '-120%'
+			slider.style.marginLeft = '0%'
 		}, 500)
 	})
 }
-var x = 0
+
+let mql = window.matchMedia('(max-width: 420px)')
+//let h2 = document.getElementById('h2')
+function screenTest(e) {
+	if (e.matches) {
+		sliderResposive()
+		return false
+	}else {
+		 slider()
+		 return false
+	}
+}
+
+screenTest(mql)
+mql.addListener(screenTest)
 
 function sliderResposive() {
-	// window.addEventListener('resize', function() {})
-		
-		if (screen.width < 420) {
+	
+		let slider = document.getElementById('slider')
+		const sliderSectiom = document.querySelectorAll('.container-slider')
+		let sliderSectionLast = sliderSectiom[sliderSectiom.length - 1]
+		const btnLeft = document.getElementById('btn-right')
+			
+		const btnRight = document.getElementById('btn-left')
+		slider.insertAdjacentElement('afterbegin',sliderSectionLast)
+			
+		function next() {
+			let sliderScetionFirist = document.querySelectorAll('.container-slider')[0]
 			let slider = document.getElementById('slider')
-			const sliderSectiom = document.querySelectorAll('.container-slider')
-			let sliderSectionLast = sliderSectiom[sliderSectiom.length - 1]
-			const btnLeft = document.getElementById('btn-right')
-			
-			const btnRight = document.getElementById('btn-left')
-			slider.insertAdjacentElement('afterbegin',sliderSectionLast)
-			
-			function next() {
-				let sliderScetionFirist = document.querySelectorAll('.container-slider')[0]
-				let slider = document.getElementById('slider')
-				slider.style.marginLeft = '-240%'
-				// slider.style.marginLeft = '-200%'
-				slider.style.transition = '.5s';
-				setTimeout(function() {
-					slider.style.transition = 'none' ;
-					slider.insertAdjacentElement('beforeend',sliderScetionFirist)
-					slider.style.marginLeft = '-120%'
+			slider.style.marginLeft = '-240%'
+			// slider.style.marginLeft = '-200%'
+			slider.style.transition = '.5s';
+			setTimeout(function() {
+				slider.style.transition = 'none' ;
+				slider.insertAdjacentElement('beforeend',sliderScetionFirist)
+				slider.style.marginLeft = '-120%'
 					// slider.style.marginLeft = '-100%'
 				}, 500)
 			}
@@ -98,12 +108,10 @@ function sliderResposive() {
 					slider.style.marginLeft = '-120%'
 				}, 500)
 			})
-		}
-		if (screen.width > 420) {
-			slider()
-		}
+		
+		
 	
 }
-// slider()
-sliderResposive()
+ // slider()
+// sliderResposive()
 

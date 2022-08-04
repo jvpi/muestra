@@ -20,6 +20,9 @@ const upload = multer({ storage: storage })
 app.post('/file', /*upload.single('file'),*/ (req, res) => {
   res.redirect('/carta')
 })
+app.get('/carta', /*upload.single('file'),*/ (req, res) => {
+  res.redirect('/reservacion')
+})
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname,'index.html'))
 })

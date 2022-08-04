@@ -17,7 +17,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage })
 
-app.post('/file', upload.single('file'), (req, res) => {
+app.post('/file', /*upload.single('file'),*/ (req, res) => {
   res.redirect('/carta')
 })
 app.get('/', (req, res) => {
